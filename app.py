@@ -5,7 +5,7 @@ import random
 
 client = discord.Client()
 slash = SlashCommand(client, sync_commands=True)
-list = [
+list = ["<무작위: 숙련자>","<무작위: 레벨링>","<무작위: 506070", "<무작위: 토벌전",
         "<고대 무기: 제타> 한 단계 완성",
         "<고대 무기: 아니마> 한 단계 완성",
         "<고대 무기: 에우레카> 한 단계 완성",
