@@ -32,9 +32,10 @@ async def on_ready():
     description="무얼할지 못 정한 당신을 위해 룰-렛을 굴려드립니다."
 )
 async def command_mohaji(ctx):
-    embed=discord.Embed(title=random.choice(list), description="자, 어서 하러 갑시다!", color=0x38d7ff)
+    embed=discord.Embed(title="🎰" + random.choice(list), description="자, 어서 하러 갑시다!", color=0x38d7ff)
     embed.set_author(name=ctx.author.name + "님이 해야할 일은", icon_url=ctx.author.avatar_url)
     embed.set_footer(text="엥? 이미 해버린거라구요? 그럼 다시 `/모하지`")
+    embed.set_thumbnail(url=client.user.avatar_url)
     await ctx.send(embed=embed)
 
 client.run(os.environ['token'])
